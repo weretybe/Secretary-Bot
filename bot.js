@@ -20,4 +20,4 @@ client.on('message', msg => {
     msg.channel.send('https://drive.google.com/open?id=174k_24ILN6YkEWdVbTO4x6uGDW2HFRw8'); }       
 });
 
-client.login('NjI3OTIzODkxODAwNzY4NTQy.XZDuRw.4iXXjTEurxhBqkb99u1Mfc2Td18');
+client.login(process.env.NjI3OTIzODkxODAwNzY4NTQy.XZDuRw.4iXXjTEurxhBqkb99u1Mfc2Td18);
