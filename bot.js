@@ -20,7 +20,7 @@ client.on('message', msg => {
   if (msg.content === '!nola') {
     msg.channel.send('https://drive.google.com/open?id=174k_24ILN6YkEWdVbTO4x6uGDW2HFRw8'); }       
   if (msg.content === '!tyquote') {
-    msg.channel.sendText(tyquote()); }       
+    msg.channel.send(tyquote()); }       
 });
 
 function tyquote() {
