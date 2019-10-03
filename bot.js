@@ -12,7 +12,7 @@ client.on('message', msg => {
   if (msg.content === '!bot') {
     msg.channel.send('I am listening and taking notes'); }
   if (msg.content === '!commands') {
-    msg.channel.send('Right now I know airhorn, bot, and maps. I am trying to remember Quotes and News');  }     
+    msg.channel.send('Right now I know airhorn, bot, and maps, and quotes.');  }     
   if (msg.content === '!maps') {
     msg.channel.send('I have guided maps for !houston and !nola'); }  
   if (msg.content === '!houston') {
@@ -40,7 +40,9 @@ client.on('message', msg => {
   if (msg.content === '!devanquote') {
     msg.channel.send(devanquote()); }  
   if (msg.content === '!meganquote') {
-    msg.channel.send('Boobies, and you can quote me on that - Megan Vasquez, 2019'); }                                 
+    msg.channel.send("'Boobies, and you can quote me on that' - Megan Vasquez, 2019"); }
+   if (msg.content === '!bethquote') {
+    msg.channel.send("'If you cum even a single bee inside a girl, you are never going to fuck her again' - Beth DeLeon, 2018"); } 
 });
 
 //Quote Funtions
