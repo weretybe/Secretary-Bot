@@ -23,7 +23,7 @@ client.on('message', msg => {
 
 //Quote Handler
 client.on('message', msg => {
-  if (msg.content === '!airhorn') {
+  if (msg.content === '!tyquote') {
     msg.channel.sendText(tyquote()); }       
 });
 
