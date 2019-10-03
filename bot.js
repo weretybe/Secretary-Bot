@@ -19,10 +19,6 @@ client.on('message', msg => {
     msg.channel.send('https://drive.google.com/open?id=1Jo_qj2kzXdzza1N-iLxHO5IIWJM'); }   
   if (msg.content === '!nola') {
     msg.channel.send('https://drive.google.com/open?id=174k_24ILN6YkEWdVbTO4x6uGDW2HFRw8'); }       
-});
-
-//Quote Handler
-client.on('message', msg => {
   if (msg.content === '!tyquote') {
     msg.channel.sendText(tyquote()); }       
 });
