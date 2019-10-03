@@ -5,8 +5,8 @@ client.on('ready', () => {
   console.log(`I am ready!`);
 });
 
-//Simple 1 to 1 responses
 client.on('message', msg => {
+  //Simple 1 to 1 responses
   if (msg.content === '!airhorn') {
     msg.channel.send('BRRRR BURR BURR BURR BURRRRRR'); }
   if (msg.content === '!bot') {
@@ -18,14 +18,67 @@ client.on('message', msg => {
   if (msg.content === '!houston') {
     msg.channel.send('https://drive.google.com/open?id=1Jo_qj2kzXdzza1N-iLxHO5IIWJM'); }   
   if (msg.content === '!nola') {
-    msg.channel.send('https://drive.google.com/open?id=174k_24ILN6YkEWdVbTO4x6uGDW2HFRw8'); }       
+    msg.channel.send('https://drive.google.com/open?id=174k_24ILN6YkEWdVbTO4x6uGDW2HFRw8'); } 
+  
+    //Quotes        
   if (msg.content === '!tyquote') {
     msg.channel.send(tyquote()); }       
+  if (msg.content === '!chrisquote') {
+    msg.channel.send(chrisjquote()); }    
+  if (msg.content === '!npcquote') {
+    msg.channel.send(npcquote()); }
+  if (msg.content === '!scottquote') {
+    msg.channel.send(scottquote()); }
+  if (msg.content === '!kristynquote') {
+    msg.channel.send(kristynquote()); }
+  if (msg.content === '!ethquote') {
+    msg.channel.send(ethquote()); }   
+  if (msg.content === '!austinquote') {
+    msg.channel.send(austinquote()); }  
+  if (msg.content === '!thunderquote') {
+    msg.channel.send(thunderquote()); }  
+  if (msg.content === '!devanquote') {
+    msg.channel.send(devanquote()); }  
+  if (msg.content === '!meganquote') {
+    msg.channel.send('Boobies, and you can quote me on that - Megan Vasquez, 2019'); }                                 
 });
 
+//Quote Funtions
 function tyquote() {
-  var values = ["'You can't naked dat butt with pants on.' - Ty Oden, 2017","'Okay; first off Im not even in that chat right now but if we talking about best fashonista and you are talking some other fillies name besides Rarity you need to spit that trash out of your dick catcher you ignorant fuckass.' - Ty Oden, 2017","'Furries are the blackface of dogs' - Ty Oden, 2018","'This otter is stupid thicc and the Monteray Bay Aquarium should not have to apoligize for fat shaming their own otter.' - Ty Oden, 2018"],
+  var values = ["'You can't naked dat butt with pants on.' - Ty Oden, 2017","'If we talking about best fashonista and you are talking some other fillies name besides Rarity you need to spit that trash out of your dick catcher you ignorant fuckass.' - Ty Oden, 2017","'Furries are the blackface of dogs' - Ty Oden, 2018","'This otter is stupid thicc and the Monteray Bay Aquarium should not have to apoligize for fat shaming their own otter.' - Ty Oden, 2018"],
       valueToUse = values[Math.floor(Math.random() * values.length)]
-  return(valueToUse)
-}
+  return(valueToUse) }
+  function chrisjquote() {
+    var values = ["'I think we need to purge the whale[s]' - Chris Johnson, 2017", "'You have the hawks of an eagle.' - Chris Johnson, 2014","*After vomiting 'Oh that drink.. Oh my bones' - Chris Johnson, aproxximately 8 seconds into 2019." ],
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }
+function npcquote() {
+    var values = ["'Sir, do you know what month it is?' - Officer Colin, 2017","'Your legs are like your eyes on the ground' - Amanda, 2018","'Did I just get cucked by God?!' -Ryan, 2017","'Im not nice... I am a death eater. I love Azkaban. There will be no joy here.' - Kelly, 2018"],
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }
+function scottquote() {
+    var values = ["'I'm going to MacGyver my dick into my own ass!' -Scott Gilfoil, 2017","'this is literally my only utility in a world where Devan is a dragon' - Scott Gilfoil on Dragon Fucking, 2018","'Is it possible to cuck yourself?' - Scoott Gilfoot, 2018"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }
+function kristynquote() {
+  var values = ["'It's basically like ass-to-mouthing a puppet, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017","'I mean, fuck. If I could hoodwink a Santa into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018","'Why can't an anthropomorphic hedgehog pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017","'I want bear meet/Say hello to bear/Meet and greet/Meet and... yeet' - Kristyn Fusco, 2018"],
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }
+function ethquote() {
+    var values = ["'I was supposed to get spider powers. This sucks!' - John Etheridge, 2017"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }  
+function austinquote() {
+    var values = ["'Possum blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta magic to you' - Austin McDaniel, 2018"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }  
+function thunderquote() {
+    var values = ["'If a level 1 blind man showed up at our door I would kick his ass up and down that street' - Thunder O'Brien 2017","'If we are ever on Queer Eye playing paintball I'm going to shoot the goddamn cameraman' - Thunder O'Brien 2018"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }  
+function devanquote() {
+    var values = ["'Now hang on just a darn toot'in minute. How the floppy fuck can someone be anti-pony?' - Devan Horn, 2017","'There's one or two rapes, but they're tasteful' - Devan Horn, 2018","'In all honesty it was a really fair and rational genocide' - Devan Horn, 2018"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }
+
 client.login(process.env.BOT_TOKEN);
