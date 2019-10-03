@@ -5,6 +5,7 @@ client.on('ready', () => {
   console.log(`I am ready!`);
 });
 
+//Simple 1 to 1 responses
 client.on('message', msg => {
   if (msg.content === '!airhorn') {
     msg.channel.send('BRRRR BURR BURR BURR BURRRRRR'); }
@@ -20,4 +21,15 @@ client.on('message', msg => {
     msg.channel.send('https://drive.google.com/open?id=174k_24ILN6YkEWdVbTO4x6uGDW2HFRw8'); }       
 });
 
+//Quote Handler
+client.on('message', msg => {
+  if (msg.content === '!airhorn') {
+    msg.channel.sendText(tyquote()); }       
+});
+
+function tyquote() {
+  var values = ["'You can't naked dat butt with pants on.' - Ty Oden, 2017","'Okay; first off Im not even in that chat right now but if we talking about best fashonista and you are talking some other fillies name besides Rarity you need to spit that trash out of your dick catcher you ignorant fuckass.' - Ty Oden, 2017","'Furries are the blackface of dogs' - Ty Oden, 2018","'This otter is stupid thicc and the Monteray Bay Aquarium should not have to apoligize for fat shaming their own otter.' - Ty Oden, 2018"],
+      valueToUse = values[Math.floor(Math.random() * values.length)]
+  return(valueToUse)
+}
 client.login(process.env.BOT_TOKEN);
