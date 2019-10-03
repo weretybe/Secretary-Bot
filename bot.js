@@ -71,7 +71,7 @@ function ethquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function austinquote() {
-    var values = ["'Possum blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta magic to you' - Austin McDaniel, 2018"]
+    var values = ["'Possum blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta magic to you' - Austin McDaniel, 2018","'Time to go stick my dick in Yahweh!' - Austin McDaniel, 2019"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function thunderquote() {
