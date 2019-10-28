@@ -63,7 +63,7 @@ function scottquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function kristynquote() {
-  var values = ["'It's basically like ass-to-mouthing a puppet, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017","'I mean, fuck. If I could hoodwink a Santa into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018","'Why can't an anthropomorphic hedgehog pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017","'I want bear meet/Say hello to bear/Meet and greet/Meet and... yeet' - Kristyn Fusco, 2018"],
+  var values = ["'It's basically like ass-to-mouthing a puppet, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017","'I mean, fuck. If I could hoodwink a Santa into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018","'Why can't an anthropomorphic hedgehog pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017","'I want bear meat/Say hello to bear/Meet and greet/Meet and... yeet' - Kristyn Fusco, 2018","''Financially assault me, King-Daddy' - Ty Oden, 2019' - Kristyn Fucso, 2019" ],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function ethquote() {
