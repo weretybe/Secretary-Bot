@@ -39,6 +39,8 @@ client.on('message', msg => {
     msg.channel.send(thunderquote()); }  
   if (msg.content === '!devanquote') {
     msg.channel.send(devanquote()); }  
+  if (msg.content === '!jakequote') {
+      msg.channel.send(jakequote()); }    
   if (msg.content === '!meganquote') {
     msg.channel.send("'Boobies, and you can quote me on that' - Megan Vasquez, 2019"); }
    if (msg.content === '!bethquote') {
@@ -63,7 +65,7 @@ function scottquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function kristynquote() {
-  var values = ["'It's basically like ass-to-mouthing a puppet, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017","'I mean, fuck. If I could hoodwink a Santa into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018","'Why can't an anthropomorphic hedgehog pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017","'I want bear meat/Say hello to bear/Meet and greet/Meet and... yeet' - Kristyn Fusco, 2018","''Financially assault me, King-Daddy' - Ty Oden, 2019' - Kristyn Fucso, 2019" ],
+  var values = ["'It's basically like ass-to-mouthing a puppet, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017","''Financially assault me, King-Daddy' - Ty Oden' - Kristyn Fusco, 2019","'I mean, fuck. If I could hoodwink a Santa into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018","'Why can't an anthropomorphic hedgehog pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017","'I want bear meet/Say hello to bear/Meet and greet/Meet and... yeet' - Kristyn Fusco, 2018"],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function ethquote() {
@@ -71,7 +73,7 @@ function ethquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function austinquote() {
-    var values = ["'Possum blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta magic to you' - Austin McDaniel, 2018","'Time to go stick my dick in Yahweh!' - Austin McDaniel, 2019"]
+    var values = ["'Possum blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta magic to you' - Austin McDaniel, 2018","'I also want a compilation of every pinned quote I've ever earned read out by whomever is presiding over my funeral.' - Austin McDaniel, 2019","'I don't think volcanoes... cum' - Austin McDaniel, 2019"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function thunderquote() {
@@ -79,8 +81,12 @@ function thunderquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function devanquote() {
-    var values = ["'Now hang on just a darn toot'in minute. How the floppy fuck can someone be anti-pony?' - Devan Horn, 2017","'There's one or two rapes, but they're tasteful' - Devan Horn, 2018","'In all honesty it was a really fair and rational genocide' - Devan Horn, 2018"]
+    var values = ["'Now hang on just a darn toot'in minute. How the floppy fuck can someone be anti-pony?' - Devan Horn, 2017","'[Jake], did you dick the gas outta my car?!?' - Devan Horn, 2020","'There's one or two rapes, but they're tasteful' - Devan Horn, 2018","'In all honesty it was a really fair and rational genocide' - Devan Horn, 2018"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
+function jakequote() {
+    var values = ["'If your vag is stuffed with cheese no man mayo is getting in' - Jake, 2020","'I believe in your testicles, Troy' - Jake, 2019"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }    
 
 client.login(process.env.BOT_TOKEN);
