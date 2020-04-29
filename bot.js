@@ -12,7 +12,9 @@ client.on('message', msg => {
   if (msg.content === '!bot') {
     msg.channel.send('I am listening and taking notes'); }
   if (msg.content === '!commands') {
-    msg.channel.send('Right now I know airhorn, bot, and maps, and quotes.');  }     
+    msg.channel.send('Right now I know airhorn, bot, and maps, and quotelist.');  }     
+  if (msg.content === '!quotelist') {
+    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quptes for each: ty(4), Chris(2), npc(5), scott(3), kristyn(5), eth(1), austin(5), thunder(2), devan(5), jake(2), megan(1), beth(1). '); }    
   if (msg.content === '!maps') {
     msg.channel.send('I have guided maps for !houston and !nola'); }  
   if (msg.content === '!houston') {
@@ -57,7 +59,7 @@ function tyquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function npcquote() {
-    var values = ["'Sir, do you know what month it is?' - Officer Colin, 2017","'Your legs are like your eyes on the ground' - Amanda, 2018","'Did I just get cucked by God?!' -Ryan, 2017","'Im not nice... I am a death eater. I love Azkaban. There will be no joy here.' - Kelly, 2018"],
+    var values = ["'Sir, do you know what month it is?' - Officer Colin, 2017","'For the love of god, stay away from the Dip'N'Dots!' - JR, 2020","'Your legs are like your eyes on the ground' - Amanda, 2018","'Did I just get cucked by God?!' -Ryan, 2017","'Im not nice... I am a death eater. I love Azkaban. There will be no joy here.' - Kelly, 2018"],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function scottquote() {
@@ -73,7 +75,7 @@ function ethquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function austinquote() {
-    var values = ["'Possum blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta magic to you' - Austin McDaniel, 2018","'I also want a compilation of every pinned quote I've ever earned read out by whomever is presiding over my funeral.' - Austin McDaniel, 2019","'I don't think volcanoes... cum' - Austin McDaniel, 2019"]
+    var values = ["'Possum blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta magic to you' - Austin McDaniel, 2018","'I also want a compilation of every pinned quote I've ever earned read out by whomever is presiding over my funeral.' - Austin McDaniel, 2019","'I don't think volcanoes... cum' - Austin McDaniel, 2019","'Only thing worse than a coke dealer, is a coke dealer who refuses to go green' - Austin McDaniel, 2020"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function thunderquote() {
@@ -81,7 +83,7 @@ function thunderquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function devanquote() {
-    var values = ["'Now hang on just a darn toot'in minute. How the floppy fuck can someone be anti-pony?' - Devan Horn, 2017","'[Jake], did you dick the gas outta my car?!?' - Devan Horn, 2020","'There's one or two rapes, but they're tasteful' - Devan Horn, 2018","'In all honesty it was a really fair and rational genocide' - Devan Horn, 2018"]
+    var values = ["'Now hang on just a darn toot'in minute. How the floppy fuck can someone be anti-pony?' - Devan Horn, 2017","'[Jake], did you dick the gas outta my car?!?' - Devan Horn, 2020","'There's one or two rapes, but they're tasteful' - Devan Horn, 2018","'In all honesty it was a really fair and rational genocide' - Devan Horn, 2018","'All neko genitalia are valid!' - Devan Horn, 2020"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function jakequote() {
