@@ -14,7 +14,7 @@ client.on('message', msg => {
   if (msg.content === '!commands') {
     msg.channel.send('Right now I know airhorn, bot, and maps, and quotelist.');  }     
   if (msg.content === '!quotelist') {
-    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quptes for each: ty(4), Chris(2), npc(5), scott(3), kristyn(5), eth(1), austin(5), thunder(2), devan(5), jake(2), megan(1), beth(1). '); }    
+    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quptes for each: ty(5), Chris(2), npc(5), scott(3), kristyn(5), eth(1), austin(5), thunder(2), devan(5), jake(3), megan(1), beth(1). '); }    
   if (msg.content === '!maps') {
     msg.channel.send('I have guided maps for !houston and !nola'); }  
   if (msg.content === '!houston') {
@@ -51,11 +51,11 @@ client.on('message', msg => {
 
 //Quote Funtions
 function tyquote() {
-  var values = ["'You can't naked dat butt with pants on.' - Ty Oden, 2017","'If we talking about best fashonista and you are talking some other fillies name besides Rarity you need to spit that trash out of your dick catcher you ignorant fuckass.' - Ty Oden, 2017","'Furries are the blackface of dogs' - Ty Oden, 2018","'This otter is stupid thicc and the Monteray Bay Aquarium should not have to apoligize for fat shaming their own otter.' - Ty Oden, 2018"],
+  var values = ["'You can't naked dat butt with pants on.' - Ty Oden, 2017","'If we talking about best fashonista and you are talking some other fillies name besides Rarity you need to spit that trash out of your dick catcher you ignorant fuckass.' - Ty Oden, 2017","'Furries are the blackface of dogs' - Ty Oden, 2018","'This otter is stupid thicc and the Monteray Bay Aquarium should not have to apoligize for fat shaming their own otter.' - Ty Oden, 2019","'That's how you get eaten by a big spider disguised as a sexy person' - Ty Oden, 2020"],
       valueToUse = values[Math.floor(Math.random() * values.length)]
   return(valueToUse) }
   function chrisjquote() {
-    var values = ["'I think we need to purge the whale[s]' - Chris Johnson, 2017", "'You have the hawks of an eagle.' - Chris Johnson, 2014","*After vomiting 'Oh that drink.. Oh my bones' - Chris Johnson, aproxximately 8 seconds into 2019." ],
+    var values = ["'I think we need to purge the whale[s]' - Chris Johnson, 2017", "'You have the hawks of an eagle.' - Chris Johnson, 2014","*After vomiting 'Oh that drink.. Oh my bones' - Chris Johnson, aproximately 8 seconds into 2019." ],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function npcquote() {
@@ -87,7 +87,7 @@ function devanquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function jakequote() {
-    var values = ["'If your vag is stuffed with cheese no man mayo is getting in' - Jake, 2020","'I believe in your testicles, Troy' - Jake, 2019"]
+    var values = ["'If your vag is stuffed with cheese no man mayo is getting in' - Jake, 2020","'I believe in your testicles, Troy' - Jake, 2019","'Oooo baby. I just wanna lay ya down a platonically watch a movie together so bad.' - Jake, 2020"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }    
 
