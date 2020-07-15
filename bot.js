@@ -21,6 +21,11 @@ client.on('message', msg => {
     msg.channel.send('https://drive.google.com/open?id=1Jo_qj2kzXdzza1N-iLxHO5IIWJM'); }   
   if (msg.content === '!nola') {
     msg.channel.send('https://drive.google.com/open?id=174k_24ILN6YkEWdVbTO4x6uGDW2HFRw8'); } 
+
+  if (msg.content === '!boldtest1') {
+    msg.channel.send(' this is normal *is this bold?* **italics??**'); } 
+  if (msg.content === '!boldtest1 1') {
+    msg.channel.send('Yes, this works'); } 	
   
     //Quotes        
   if (msg.content === '!tyquote') {
