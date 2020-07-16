@@ -85,8 +85,6 @@ client.on('message', msg => {
     msg.channel.send("'Why can't an anthropomorphic **hedgehog** pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017"); } 
   if (msg.content === '!kristynquote bear') {
     msg.channel.send("'I want **bear** meet/Say hello to bear/Meet and greet/Meet and... yeet' - Kristyn Fusco, 2018"); } 
-  if (msg.content === '!kristynquote *') {
-    msg.channel.send(*); } 
 
   if (msg.content === '!austinquote possum') {
     msg.channel.send("'**Possum** blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017"); } 	
