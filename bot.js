@@ -89,15 +89,15 @@ client.on('message', msg => {
   if (msg.content === '!kristynquote *') {
     msg.channel.send(*); } 
 
-if (msg.content === '!austinquote possum') {
+  if (msg.content === '!austinquote possum') {
     msg.channel.send("'**Possum** blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017"); } 	
-if (msg.content === '!austinquote magic') {
+  if (msg.content === '!austinquote magic') {
     msg.channel.send("'I will mansplain the shit outta **magic** to you' - Austin McDaniel, 2018"); } 	
-if (msg.content === '!austinquote funeral') {
+  if (msg.content === '!austinquote funeral') {
     msg.channel.send("'I also want a compilation of every pinned quote I've ever earned read out by whomever is presiding over my **funeral**.' - Austin McDaniel, 2019"); } 	
-if (msg.content === '!austinquote volcanoes') {
+  if (msg.content === '!austinquote volcanoes') {
     msg.channel.send("'I don't think **volcanoes**... cum' - Austin McDaniel, 2019"); } 	
-if (msg.content === '!austinquote coke') {
+  if (msg.content === '!austinquote coke') {
     msg.channel.send("'Only thing worse than a coke dealer, is a **coke** dealer who refuses to go green' - Austin McDaniel, 2020"); } 	
 
   if (msg.content === '!thunderquote blind') {
@@ -129,7 +129,7 @@ function tyquote() {
   var values = ["'You can't naked dat butt with **pants** on.' - Ty Oden, 2017","'If we talking about best fashonista and you are talking some other filly's name besides Rarity you need to spit that trash out of your dick catcher you ignorant fuckass.' - Ty Oden, 2017","'**Furries** are the blackface of dogs' - Ty Oden, 2018","'This **otter** is stupid thicc and the Monteray Bay Aquarium should not have to apoligize for fat shaming their own otter.' - Ty Oden, 2019","'That's how you get eaten by a big **spider** disguised as a sexy person' - Ty Oden, 2020","'Don't let any 5-year age gap or bounce house dominatrix get you down. You're a **King**.' - Ty Oden, 2020"],
       valueToUse = values[Math.floor(Math.random() * values.length)]
   return(valueToUse) }
-  function chrisjquote() {
+function chrisjquote() {
     var values = ["'I think we need to purge the **whales**' - Chris Johnson, 2017","'You have the **hawks** of an eagle.' - Chris Johnson, 2014","*After vomiting 'Oh that drink.. Oof my **bones**' - Chris Johnson, aproximately 8 seconds into 2019."],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
