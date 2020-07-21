@@ -108,9 +108,9 @@ client.on('message', msg => {
     msg.channel.send("'[Jake], did you dick the **gas** outta my car?!?' - Devan Horn, 2020"); }  
   if (msg.content === '!devanquote tasteful') {
     msg.channel.send("'There's one or two rapes, but they're **tasteful**' - Devan Horn, 2018"); }  
-  if (msg.content === '!devanquote *') {
+  if (msg.content === '!devanquote genocide') {
     msg.channel.send("'In all honesty it was a really fair and rational **genocide**' - Devan Horn, 2018"); }  
-  if (msg.content === '!devanquote *') {
+  if (msg.content === '!devanquote neko') {
     msg.channel.send("'All **neko** genitalia are valid!' - Devan Horn, 2020"); }  
 
   if (msg.content === '!jakequote cheese') {
