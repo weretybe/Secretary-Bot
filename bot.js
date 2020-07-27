@@ -14,7 +14,7 @@ client.on('message', msg => {
   if (msg.content === '!commands') {
     msg.channel.send('Right now I know airhorn, bot, and maps, and quotelist.');  }     
   if (msg.content === '!quotelist') {
-    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each: ty(7 - cougar, pants, rarity, furries, otter, spider, king), chris(3 - whales, bones, hawks), npc(5), scott(3 - macgyver, dragon, cuck), kristyn(6 - puppet, king, hedgehog, santa, bear, cougar), eth(1), austin(6 - tacos, possum, volcanoes, magic, funeral, coke), thunder(2 - blind, paintball), devan(5 - pony, gas, tasteful, genocide, neko), jake(4 - avatar, cheese, believe, baby), megan(1), beth(1). '); } 
+    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each: ty(7 - cougar, pants, rarity, furries, otter, spider, king), chris(3 - whales, bones, hawks), npc(5), scott(3 - macgyver, dragon, cuck), kristyn(5 - puppet, king, hedgehog, santa, cougar), eth(1), austin(6 - tacos, possum, volcanoes, magic, funeral, coke), thunder(2 - blind, paintball), devan(5 - pony, gas, tasteful, genocide, neko), jake(4 - avatar, cheese, believe, baby), megan(1), beth(1). '); } 
   if (msg.content === '!maps') {
     msg.channel.send('I have guided maps for !houston and !nola'); }  
   if (msg.content === '!houston') {
@@ -85,8 +85,6 @@ client.on('message', msg => {
     msg.channel.send("'I mean, fuck. If I could hoodwink a **Santa** into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018"); } 
   if (msg.content === '!kristynquote hedgehog') {
     msg.channel.send("'Why can't an anthropomorphic **hedgehog** pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017"); } 
-  if (msg.content === '!kristynquote bear') {
-    msg.channel.send("'I want **bear** meet/Say hello to bear/Meet and greet/Meet and... yeet' - Kristyn Fusco, 2018"); } 
   if (msg.content === '!kristynquote cougar') {
     msg.channel.send("'I could totally top a **cougar**.' - Kristyn Oden, 2020"); }
   
@@ -147,7 +145,7 @@ function scottquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function kristynquote() {
-  var values = ["'It's basically like ass-to-mouthing a **puppet**, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017","''Financially assault me, **King**-Daddy' - Ty Oden' - Kristyn Oden, 2019","'I mean, fuck. If I could hoodwink a **Santa** into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018","'Why can't an anthropomorphic **hedgehog** pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017","'I want **bear** meet/Say hello to bear/Meet and greet/Meet and... yeet' - Kristyn Fusco, 2018","'I could totally top a **cougar**.' - Kristyn Oden, 2020"],
+  var values = ["'It's basically like ass-to-mouthing a **puppet**, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017","''Financially assault me, **King**-Daddy' - Ty Oden' - Kristyn Oden, 2019","'I mean, fuck. If I could hoodwink a **Santa** into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018","'Why can't an anthropomorphic **hedgehog** pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017","'I could totally top a **cougar**.' - Kristyn Oden, 2020"],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function ethquote() {
