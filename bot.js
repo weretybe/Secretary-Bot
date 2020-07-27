@@ -14,7 +14,7 @@ client.on('message', msg => {
   if (msg.content === '!commands') {
     msg.channel.send('Right now I know airhorn, bot, and maps, and quotelist.');  }     
   if (msg.content === '!quotelist') {
-    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each: ty(7 - cougar, pants, rarity, furries, otter, spider, king), chris(3 - whales, bones, hawks), npc(5), scott(3 - macgyver, dragon, cuck), kristyn(5 - puppet, king, hedgehog, santa, cougar), eth(1), austin(6 - tacos, possum, volcanoes, magic, funeral, coke), thunder(2 - blind, paintball), devan(5 - pony, gas, tasteful, genocide, neko), jake(4 - avatar, cheese, believe, baby), megan(1), beth(1). '); } 
+    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each. Note: all commands for the bot have to be in lower case: **ty** (7 - cougar, pants, rarity, furries, otter, spider, king), **chris** (3 - whales, bones, hawks), **npc** (5), **scott** (3 - macgyver, dragon, cuck), **kristyn** (5 - puppet, king, hedgehog, santa, cougar), **eth** (1), **austin** (6 - tacos, possum, volcanoes, magic, funeral, coke), **thunder** (2 - blind, paintball), **devan** (5 - pony, gas, tasteful, genocide, neko), **jake** (4 - avatar, cheese, believe, baby), **megan** (1), **beth** (1). '); } 
   if (msg.content === '!maps') {
     msg.channel.send('I have guided maps for !houston and !nola'); }  
   if (msg.content === '!houston') {
