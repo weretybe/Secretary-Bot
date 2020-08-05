@@ -131,7 +131,7 @@ client.on('message', msg => {
   if (msg.content === '!ethquote spider') {
     msg.channel.send("'I was supposed to get **spider** powers. This sucks!' - John Etheridge, 2017"); }  
   if (msg.content === '!ethquote housecats') {
-    msg.channel.send("'The 40 hour work week was invented by **housecats** trying to get their humans out of the house for most of the day.' - John Ethridge, 2020"); }  
+    msg.channel.send("'The 40 hour work week was invented by **housecats** trying to get their humans out of the house for most of the day.' - John Etheridge, 2020"); }  
 });
 
 //Quote Funtions
@@ -156,7 +156,7 @@ function kristynquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function ethquote() {
-    var values = ["'I was supposed to get **spider** powers. This sucks!' - John Etheridge, 2017","'The 40 hour work week was invented by **housecats** trying to get their humans out of the house for most of the day.' - John Ethridge, 2020"]
+    var values = ["'I was supposed to get **spider** powers. This sucks!' - John Etheridge, 2017","'The 40 hour work week was invented by **housecats** trying to get their humans out of the house for most of the day.' - John Etheridge, 2020"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function austinquote() {
