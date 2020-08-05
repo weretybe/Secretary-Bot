@@ -14,7 +14,7 @@ client.on('message', msg => {
   if (msg.content === '!commands') {
     msg.channel.send('Right now I know airhorn, bot, and maps, and quotelist.');  }     
   if (msg.content === '!quotelist') {
-    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each. Note: all commands for the bot have to be in lower case: **ty** (7 - cougar, pants, rarity, furries, otter, spider, king), **chris** (3 - whales, bones, hawks), **npc** (5), **scott** (3 - macgyver, dragon, cuck), **kristyn** (5 - puppet, king, hedgehog, santa, cougar), **eth** (1), **austin** (6 - tacos, possum, volcanoes, magic, funeral, coke), **thunder** (2 - blind, paintball), **devan** (5 - pony, gas, tasteful, genocide, neko), **jake** (4 - avatar, cheese, believe, baby), **megan** (1), **beth** (1). '); } 
+    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each. Note: all commands for the bot have to be in lower case: **ty** (7 - cougar, pants, rarity, furries, otter, spider, king), **chris** (3 - whales, bones, hawks), **npc** (5), **scott** (3 - macgyver, dragon, cuck), **kristyn** (6 - ass, puppet, king, hedgehog, santa, cougar), **eth** (2 - spider, housecats), **austin** (6 - tacos, possum, volcanoes, magic, funeral, coke), **thunder** (2 - blind, paintball), **devan** (5 - pony, gas, tasteful, genocide, neko), **jake** (4 - avatar, cheese, believe, baby), **megan** (1), **beth** (1). '); } 
   if (msg.content === '!maps') {
     msg.channel.send('I have guided maps for !houston and !nola'); }  
   if (msg.content === '!houston') {
@@ -125,6 +125,11 @@ client.on('message', msg => {
     msg.channel.send("'Oooo **baby**. I just wanna lay ya down a platonically watch a movie together so bad.' - Jake, 2020"); } 
   if (msg.content === '!jakequote avatar') {
     msg.channel.send("'Now the **avatar** must master the 4 elements; Gun, Bear, Man, and Woman' - Jake, 2020"); }
+  
+  if (msg.content === '!ethquote spider') {
+    msg.channel.send("'I was supposed to get **spider** powers. This sucks!' - John Etheridge, 2017"); }  
+  if (msg.content === '!ethquote housecats') {
+    msg.channel.send("'The 40 hour work week was invented by **housecats** trying to get their humans out of the house for most of the day.' - John Ethridge, 2020"); }  
 });
 
 //Quote Funtions
@@ -145,11 +150,11 @@ function scottquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function kristynquote() {
-  var values = ["'It's basically like ass-to-mouthing a **puppet**, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017","''Financially assault me, **King**-Daddy' - Ty Oden' - Kristyn Oden, 2019","'I mean, fuck. If I could hoodwink a **Santa** into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018","'Why can't an anthropomorphic **hedgehog** pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017","'I could totally top a **cougar**.' - Kristyn Oden, 2020"],
+  var values = ["'Dev just likes it when I use my **ass** for evil.' - Kristyn Oden, 2020","'It's basically like ass-to-mouthing a **puppet**, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017","''Financially assault me, **King**-Daddy' - Ty Oden' - Kristyn Oden, 2019","'I mean, fuck. If I could hoodwink a **Santa** into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018","'Why can't an anthropomorphic **hedgehog** pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Fusco, 2017","'I could totally top a **cougar**.' - Kristyn Oden, 2020"],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function ethquote() {
-    var values = ["'I was supposed to get spider powers. This sucks!' - John Etheridge, 2017"]
+    var values = ["'I was supposed to get **spider** powers. This sucks!' - John Etheridge, 2017","'The 40 hour work week was invented by **housecats** trying to get their humans out of the house for most of the day.' - John Ethridge, 2020"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function austinquote() {
