@@ -81,6 +81,8 @@ client.on('message', msg => {
     msg.channel.send("'It's basically like ass-to-mouthing a **puppet**, but yelling while you do it so that your words come out of its mouth' - Kristyn Fusco 2017"); } 
   if (msg.content === '!kristynquote king') {
     msg.channel.send("''Financially assault me, **King**-Daddy' - Ty Oden' - Kristyn Fusco, 2019"); } 
+  if (msg.content === '!kristynquote ass') {
+    msg.channel.send("'Dev just likes it when I use my **ass** for evil.' - Kristyn Oden, 2020"); } 
   if (msg.content === '!kristynquote santa') {
     msg.channel.send("'I mean, fuck. If I could hoodwink a **Santa** into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Fusco, noted Santa Fetishist, 2018"); } 
   if (msg.content === '!kristynquote hedgehog') {
