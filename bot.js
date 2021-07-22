@@ -16,9 +16,6 @@ client.on('message', msg => {
   if (msg.content === '!quotelist') {
     msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each. Note: all commands for the bot have to be in lower case: **ty** (7 - cougar, pants, rarity, furries, otter, spider, king), **chris** (3 - whales, bones, hawks), **npc** (6), **scott** (5 - tiddy, macgyver, dragon, pee, cuck), **kristyn** (8 - ass, basic, puppet, king, hedgehog, santa, cougar, wolf), **eth** (2 - spider, housecats), **austin** (8 - slaves, tacos, boobs, possum, crab, magic, funeral, coke), **thunder** (2 - blind, paintball), **devan** (8 - ahegao, goat, pony, saw, genocide, neko, coffee, nuts), **jake** (5 - avatar, roll, cheese, believe, baby), **sully** (3 - gorilla,graveyards, wolves), **megan** (1), **beth** (1), **troy** (1), **laurel** (1). '); } 
 
-//Haiku Function 
- if (msg.content === '!haiku') {
-    msg.channel.send(haikuwords()); msg.channel.send(haikupicture()); }       
  
 //Quotes        
   if (msg.content === '!tyquote') {
