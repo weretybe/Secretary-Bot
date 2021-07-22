@@ -16,6 +16,9 @@ client.on('message', msg => {
   if (msg.content === '!quotelist') {
     msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each. Note: all commands for the bot have to be in lower case: **ty** (7 - cougar, pants, rarity, furries, otter, spider, king), **chris** (3 - whales, bones, hawks), **npc** (6), **scott** (5 - tiddy, macgyver, dragon, pee, cuck), **kristyn** (8 - ass, basic, puppet, king, hedgehog, santa, cougar, wolf), **eth** (2 - spider, housecats), **austin** (8 - slaves, tacos, boobs, possum, crab, magic, funeral, coke), **thunder** (2 - blind, paintball), **devan** (8 - ahegao, goat, pony, saw, genocide, neko, coffee, nuts), **jake** (5 - avatar, roll, cheese, believe, baby), **sully** (3 - gorilla,graveyards, wolves), **megan** (1), **beth** (1), **troy** (1), **laurel** (1). '); } 
 
+//Haiku Function 
+ if (msg.content === '!haiku') {
+    msg.channel.send(haikuwords()); msg.channel.send(haikupicture()); }       
  
 //Quotes        
   if (msg.content === '!tyquote') {
@@ -163,7 +166,7 @@ client.on('message', msg => {
   if (msg.content === '!sullyquote graveyards') {
     msg.channel.send("'God I love **graveyards** and fat asses' - Sully, 2021"); }   
   if (msg.content === '!sullyquote wolves') {
-    msg.channel.send(“'Inside of you are two **wolves**. One of them wants to cum, and one of them wants to cry' -Sully, 2020"); }   	
+    msg.channel.send("'Inside of you are two **wolves**. One of them wants to cum, and one of them wants to cry' -Sully, 2020"); }   	
 
 
   if (msg.content === '!ethquote spider') {
@@ -211,7 +214,7 @@ function devanquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function sullyquote() {
-    var values = ["'God as my witness- if a **gorilla** ever grabs me I have no shame' - Sully, 2021","'God I love **graveyards** and fat asses' - Sully, 2021",“'Inside of you are two **wolves**. One of them wants to cum, and one of them wants to cry' -Sully, 2020"]
+    var values = ["'God as my witness- if a **gorilla** ever grabs me I have no shame' - Sully, 2021","'God I love **graveyards** and fat asses' - Sully, 2021","'Inside of you are two **wolves**. One of them wants to cum, and one of them wants to cry' -Sully, 2020"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }	
 function jakequote() {
