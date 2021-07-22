@@ -12,19 +12,19 @@ client.on('message', msg => {
   if (msg.content === '!bot') {
     msg.channel.send('I am listening and taking notes'); }
   if (msg.content === '!commands') {
-    msg.channel.send('Right now I know airhorn, bot, and maps, and quotelist.');  }     
+    msg.channel.send('Right now I know airhorn, bot, and quotelist.');  }     
   if (msg.content === '!quotelist') {
-    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each. Note: all commands for the bot have to be in lower case: **ty** (7 - cougar, pants, rarity, furries, otter, spider, king), **chris** (3 - whales, bones, hawks), **npc** (6), **scott** (4 - tiddy, macgyver, dragon, cuck), **kristyn** (8 - ass, basic, puppet, king, hedgehog, santa, cougar, wolf), **eth** (2 - spider, housecats), **austin** (8 - slaves, tacos, boobs, possum, volcanoes, magic, funeral, coke), **thunder** (2 - blind, paintball), **devan** (8 - ahegao, goat, pony, gas, saw, genocide, neko, coffee), **jake** (5 - avatar, roll, cheese, believe, baby), **megan** (1), **beth** (1), **troy** (1). '); } 
-  if (msg.content === '!maps') {
-    msg.channel.send('I have guided maps for !houston and !nola'); }  
-  if (msg.content === '!houston') {
-    msg.channel.send('https://drive.google.com/open?id=1Jo_qj2kzXdzza1N-iLxHO5IIWJM'); }   
-  if (msg.content === '!nola') {
-    msg.channel.send('https://drive.google.com/open?id=174k_24ILN6YkEWdVbTO4x6uGDW2HFRw8'); } 
-  
-    //Quotes        
+    msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each. Note: all commands for the bot have to be in lower case: **ty** (7 - cougar, pants, rarity, furries, otter, spider, king), **chris** (3 - whales, bones, hawks), **npc** (6), **scott** (5 - tiddy, macgyver, dragon, pee, cuck), **kristyn** (8 - ass, basic, puppet, king, hedgehog, santa, cougar, wolf), **eth** (2 - spider, housecats), **austin** (8 - slaves, tacos, boobs, possum, crab, magic, funeral, coke), **thunder** (2 - blind, paintball), **devan** (8 - ahegao, goat, pony, saw, genocide, neko, coffee, nuts), **jake** (5 - avatar, roll, cheese, believe, baby), **sully** (3 - gorilla,graveyards, wolves), **megan** (1), **beth** (1), **troy** (1), **laurel** (1). '); } 
+
+//Haiku Function 
+ if (msg.content === '!haiku') {
+    msg.channel.send(haikuwords()); msg.channel.send(haikupicture()); }       
+ 
+//Quotes        
   if (msg.content === '!tyquote') {
     msg.channel.send(tyquote()); }       
+  if (msg.content === '!sullyquote') {
+    msg.channel.send(sullyquote()); }       	
   if (msg.content === '!chrisquote') {
     msg.channel.send(chrisjquote()); }    
   if (msg.content === '!npcquote') {
@@ -47,8 +47,10 @@ client.on('message', msg => {
     msg.channel.send("'Welp, I've seen Beastars and now I'm a furry' - Troy, 2020"); }       	  
   if (msg.content === '!meganquote') {
     msg.channel.send("'**Boobies**, and you can quote me on that' - Megan Vasquez, 2019"); }
-   if (msg.content === '!bethquote') {
+  if (msg.content === '!bethquote') {
     msg.channel.send("'If you cum even a single **bee** inside a girl, you are never going to fuck her again' - Beth DeLeon, 2018"); } 
+  if (msg.content === '!laurelquote') {
+    msg.channel.send("'The rash will only last a week, but you'll remember this night forever' - Laurel, 2021"); }
 
 
   if (msg.content === '!tyquote pants') {
@@ -83,7 +85,9 @@ client.on('message', msg => {
     msg.channel.send("'Is it possible to **cuck** yourself?' - Scott Horn, 2018"); } 	
  if (msg.content === '!scottquote tiddy') {
     msg.channel.send("'This woman is a **tiddy** billionaire' -Scott Horn, 2021"); } 		
-
+ if (msg.content === '!scottquote pee') {
+    msg.channel.send("'Now **pee** in this cup, Seabiscuit' -Scott Horn, 2021"); } 
+	
 
   if (msg.content === '!kristynquote puppet') {
     msg.channel.send("'It's basically like ass-to-mouthing a **puppet**, but yelling while you do it so that your words come out of its mouth' - Kristyn Oden 2017"); } 
@@ -109,8 +113,8 @@ client.on('message', msg => {
     msg.channel.send("'I will mansplain the shit outta **magic** to you' - Austin McDaniel, 2018"); } 	
   if (msg.content === '!austinquote funeral') {
     msg.channel.send("'I also want a compilation of every pinned quote I've ever earned read out by whomever is presiding over my **funeral**.' - Austin McDaniel, 2019"); } 	
-  if (msg.content === '!austinquote volcanoes') {
-    msg.channel.send("'I don't think **volcanoes**... cum' - Austin McDaniel, 2019"); } 	
+  if (msg.content === '!austinquote crab') {
+    msg.channel.send("'If a **crab** manages to sneak up on me, I deserve to die' - Austin, 2021"); } 	
   if (msg.content === '!austinquote coke') {
     msg.channel.send("'Only thing worse than a coke dealer, is a **coke** dealer who refuses to go green' - Austin McDaniel, 2020"); } 	
   if (msg.content === '!austinquote tacos') {
@@ -129,19 +133,19 @@ client.on('message', msg => {
 
   if (msg.content === '!devanquote pony') {
     msg.channel.send("'Now hang on just a darn toot'in minute. How the floppy fuck can someone be anti-**pony**?' - Devan Horn, 2017"); }  
-  if (msg.content === '!devanquote gas') {
-    msg.channel.send("'[Jake], did you dick the **gas** outta my car?!?' - Devan Horn, 2020"); }  
+  if (msg.content === '!devanquote nuts') {
+    msg.channel.send("'I am full of many **nuts** and none regrets.' - Devan Horn, 2021"); }  
   if (msg.content === '!devanquote saw') {
     msg.channel.send("'I think **Saw** could be like, way sexier' - Devan Horn, 2020"); }  
   if (msg.content === '!devanquote genocide') {
     msg.channel.send("'In all honesty it was a really fair and rational **genocide**' - Devan Horn, 2018"); }  
   if (msg.content === '!devanquote neko') {
     msg.channel.send("'All **neko** genitalia are valid!' - Devan Horn, 2020"); }  
-if (msg.content === '!devanquote ahegao') {
+  if (msg.content === '!devanquote ahegao') {
     msg.channel.send("'**Ahegao** is in your heart' - Devan Horn, 2020"); } 
-if (msg.content === '!devanquote coffee') {
+  if (msg.content === '!devanquote coffee') {
     msg.channel.send("'So now I’m drinking my home **coffee** so I can drink my first work **coffee**.' - Devan Horn, 2020."); }	
-if (msg.content === '!devanquote goat') {
+  if (msg.content === '!devanquote goat') {
     msg.channel.send("'I’ll waterboard a literal **goat** all damn day if they had nuclear launch codes.' - Dev 2021"); }	
 
   
@@ -154,14 +158,23 @@ if (msg.content === '!devanquote goat') {
   if (msg.content === '!jakequote avatar') {
     msg.channel.send("'Now the **avatar** must master the 4 elements; Gun, Bear, Man, and Woman' - Jake, 2020"); }
   if (msg.content === '!jakequote roll') {
-    msg.channel.send("'Roll intelligence to realize you’re the problem' - Jake 2019"); } 
+    msg.channel.send("'Roll intelligence to realize you’re the problem' - Jake, 2019"); } 
 
-  
+ 
+  if (msg.content === '!sullyquote gorilla') {
+    msg.channel.send("'God as my witness- if a **gorilla** ever grabs me I have no shame' - Sully, 2021"); }   
+  if (msg.content === '!sullyquote graveyards') {
+    msg.channel.send("'God I love **graveyards** and fat asses' - Sully, 2021"); }   
+  if (msg.content === '!sullyquote wolves') {
+    msg.channel.send(“'Inside of you are two **wolves**. One of them wants to cum, and one of them wants to cry' -Sully, 2020"); }   	
+
+
   if (msg.content === '!ethquote spider') {
     msg.channel.send("'I was supposed to get **spider** powers. This sucks!' - John Etheridge, 2017"); }  
   if (msg.content === '!ethquote housecats') {
     msg.channel.send("'The 40 hour work week was invented by **housecats** trying to get their humans out of the house for most of the day.' - John Etheridge, 2020"); }  
 });
+
 
 //Quote Funtions
 function tyquote() {
@@ -177,7 +190,7 @@ function npcquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function scottquote() {
-    var values = ["'This woman is a **tiddy** billionaire' -Scott Horn, 2021","'I'm going to **MacGyver** my dick into my own ass!' -Scott Horn, 2017","'[That] is literally my only utility in a world where Devan is a **dragon**' - Scott Horn on Dragon Fucking, 2018","'Is it possible to **cuck** yourself?' - Scoott Horn, 2018"]
+    var values = ["'This woman is a **tiddy** billionaire' -Scott Horn, 2021","'Now **pee** in this cup, Seabiscuit' -Scott Horn, 2021","'I'm going to **MacGyver** my dick into my own ass!' -Scott Horn, 2017","'[That] is literally my only utility in a world where Devan is a **dragon**' - Scott Horn on Dragon Fucking, 2018","'Is it possible to **cuck** yourself?' - Scoott Horn, 2018"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function kristynquote() {
@@ -189,7 +202,7 @@ function ethquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function austinquote() {
-    var values = ["'They're like the nunchucks of **boobs**' - Austin, 2021","'**Tacos** are the devil's work'-Austin McDaniel, Sandwich Purist, 2020","'You're really giving me a hard time about owning **slaves**, but I'm trying to help!' - Austin McDaniel, 2020","'**Possum** blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta **magic** to you' - Austin McDaniel, 2018","'I also want a compilation of every pinned quote I've ever earned read out by whomever is presiding over my **funeral**.' - Austin McDaniel, 2019","'I don't think **volcanoes**... cum' - Austin McDaniel, 2019","'Only thing worse than a coke dealer, is a **coke** dealer who refuses to go green' - Austin McDaniel, 2020"]
+    var values = ["'They're like the nunchucks of **boobs**' - Austin, 2021","'If a **crab** manages to sneak up on me, I deserve to die' - Austin, 2021","'**Tacos** are the devil's work'-Austin McDaniel, Sandwich Purist, 2020","'You're really giving me a hard time about owning **slaves**, but I'm trying to help!' - Austin McDaniel, 2020","'**Possum** blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta **magic** to you' - Austin McDaniel, 2018","'I also want a compilation of every pinned quote I've ever earned read out by whomever is presiding over my **funeral**.' - Austin McDaniel, 2019","'I don't think **volcanoes**... cum' - Austin McDaniel, 2019","'Only thing worse than a coke dealer, is a **coke** dealer who refuses to go green' - Austin McDaniel, 2020"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function thunderquote() {
@@ -197,12 +210,26 @@ function thunderquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function devanquote() {
-    var values = ["'I’ll waterboard a literal goat all damn day if they had nuclear launch codes.' - Dev 2021","'**Ahegao** is in your heart' - Devan Horn, 2020","'America is a continent you warm disaster' - Dev 2019","'So now I’m drinking my home coffee so I can drink my first work coffee.' - Devan Horn, 2020.","'Now hang on just a darn toot'in minute. How the floppy fuck can someone be anti-**pony**?' - Devan Horn, 2017","'[Jake], did you dick the **gas** outta my car?!?' - Devan Horn, 2020","'I think **Saw** could be like, way sexier' - Devan Horn, 2020","'In all honesty it was a really fair and rational **genocide**' - Devan Horn, 2018","'All **neko** genitalia are valid!' - Devan Horn, 2020"]
+    var values = ["'I’ll waterboard a literal goat all damn day if they had nuclear launch codes.' - Dev 2021","'I am full of many **nuts** and none regrets.' - Devan Horn, 2021","'**Ahegao** is in your heart' - Devan Horn, 2020","'America is a continent you warm disaster' - Dev 2019","'So now I’m drinking my home coffee so I can drink my first work coffee.' - Devan Horn, 2020.","'Now hang on just a darn toot'in minute. How the floppy fuck can someone be anti-**pony**?' - Devan Horn, 2017","'[Jake], did you dick the gas outta my car?!?' - Devan Horn, 2020","'I think **Saw** could be like, way sexier' - Devan Horn, 2020","'In all honesty it was a really fair and rational **genocide**' - Devan Horn, 2018","'All **neko** genitalia are valid!' - Devan Horn, 2020"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
+function sullyquote() {
+    var values = ["'God as my witness- if a **gorilla** ever grabs me I have no shame' - Sully, 2021","'God I love **graveyards** and fat asses' - Sully, 2021",“'Inside of you are two **wolves**. One of them wants to cum, and one of them wants to cry' -Sully, 2020"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }	
 function jakequote() {
     var values = ["'Roll intelligence to realize you’re the problem' - Jake 2019","'If your vag is stuffed with **cheese** no man mayo is getting in' - Jake, 2020","'I **believe** in your testicles, Troy' - Jake, 2019","'Oooo **baby**. I just wanna lay ya down a platonically watch a movie together so bad.' - Jake, 2020","'Now the **avatar** must master the 4 elements; Gun, Bear, Man, and Woman' - Jake, 2020"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }     
+
+//Haiku Function
+function haikuwords() {
+    var values = ["test word 1","test word 2"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }	
+function haikupicture() {
+    var values = ["test picture 1","test picture 2"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }	
 
 client.login(process.env.BOT_TOKEN);
