@@ -224,7 +224,7 @@ function jakequote() {
 
 //Haiku Function
 function haikuwords() {
-    var values = ["Buddy, if you want // To fuck Robocop I am // not gonna stop you  -Scott","Hello hi I am // Here and I have a question // For a straight person  -K","So clearly you can't // Judge a book by its cover // Or by its reviews.  -Ty","Just tit and leg. It's // The Spore creature creator // All over again.  -Ty","Alright. So as long // As we do fewer water // Park crimes we’ll be safe.  - Dev","It was attached to // My shoulder. I will take no // Follow up questions.  - Dev","Throw that pooch inna // Baby bjorn and start stealing // Shit from fey kingdoms.  -Ty","I pushed your cousin // Into a thresher where they // Died... allegedly  -Jake"]
+    var values = ["Buddy, if you want // To fuck Robocop I am // not gonna stop you  -Scott","Hello hi I am // Here and I have a question // For a straight person  -K","So clearly you can't // Judge a book by its cover // Or by its reviews.  -Ty","What do you think is // happening in your body // to cause you this pain? -Scott","Just tit and leg. It's // The Spore creature creator // All over again.  -Ty","Alright. So as long // As we do fewer water // Park crimes we’ll be safe.  - Dev","It was attached to // My shoulder. I will take no // Follow up questions.  - Dev","Throw that pooch inna // Baby bjorn and start stealing // Shit from fey kingdoms.  -Ty","I pushed your cousin // Into a thresher where they // Died... allegedly  -Jake"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }	
 function haikupicture() {
