@@ -18,7 +18,7 @@ client.on('message', msg => {
 
 //Haiku Function 
  if (msg.content === '!haiku') {
-    msg.channel.send(haikuwords()); msg.channel.send(haikupicture()); }       
+    msg.channel.send(haikupicture()); msg.channel.send(haikuwords()); }       
  
 //Quotes        
   if (msg.content === '!tyquote') {
@@ -224,11 +224,11 @@ function jakequote() {
 
 //Haiku Function
 function haikuwords() {
-    var values = ["test word 1","test word 2"]
+    var values = ["Buddy, if you want // To fuck Robocop I am // not gonna stop you  -Scott","Hello hi I am // Here and I have a question // For a straight person  -K","So clearly you can't // Judge a book by its cover // Or by its reviews.  -Ty","Just tit and leg. It's // The Spore creature creator // All over again.  -Ty","Alright. So as long // As we do fewer water // Park crimes we’ll be safe.  - Dev","It was attached to // My shoulder. I will take no // Follow up questions.  - Dev","Throw that pooch inna // Baby bjorn and start stealing // Shit from fey kingdoms.  -Ty","I pushed your cousin // Into a thresher where they // Died... allegedly  -Jake"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }	
 function haikupicture() {
-    var values = ["test picture 1","test picture 2"]
+    var values = ["Image:[A bare tree on a field of snow]","Image:[A bunch of birds that are sitting on a branch]","Image:[A leaf blowing on the wind]","Image:[A waterfall cascading down a cliff face]","Image:[A restfull mountain pond]","Image:[Raindrops on a bed of leaves]","Image:[A salad]","Image:[Three wolves howling at the moon, painted on the side of a van]","Image:[A field of flowers]","Image:[A field of wheat]","Image:[Two dinosaurs wrestling each other]","Image:[A hummingbird drinking from a bright orange flower]","Image:[Three moons howling at a wolf]","Image:[A turtle]","Image:[Two kittens sleeping in coffee mugs]","Image:[A big tree. Bigger. No, bigger than that.]","Image:[A fat tiger]","Image:[A lone cactus standing in the desert]","Image:[Purple Mountain's Majesty above the fruited plain]","Image:[Snakes on a Plain]","Image:[A forest fire]","Image:[A lava flow]","Image:[A mountain goat standing on the hoover dam]","Image:[A cool succulent]","Image:[A cracked mesa covered in smooth stones]","Image:[A vibrant coral reef]","Image:[An elk striding through a lush forest]","Image:[An inspiring image]","Image:[That cool picture of pluto where you can see the heart on it]","Image:[A sky full of stars]","Image:[Sakura blossoms]","Image:[One fish]","Image:[A man shaking hands with a tree]","Image:[A neat leaf I found]","Image:[Two rabbits sheltering under a bush]","Image:[A field of flowers]",]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }	
 
