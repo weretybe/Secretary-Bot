@@ -12,7 +12,7 @@ client.on('message', msg => {
   if (msg.content === '!bot') {
     msg.channel.send('I am listening and taking notes'); }
   if (msg.content === '!version') {
-    msg.channel.send('I am Secretary Bot 2.10'); }
+    msg.channel.send('I am Secretary Bot 2.11'); }
   if (msg.content === '!commands') {
     msg.channel.send('Right now I know airhorn, bot, haiku, and quotelist.');  }     
   if (msg.content === '!quotelist') {
