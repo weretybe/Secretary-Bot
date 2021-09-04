@@ -24,7 +24,7 @@ client.on('message', msg => {
 	
 //tarot Function 
  if (msg.content === '!tarot') {
-    msg.channel.send('Your Past:' tyquote()); msg.channel.send('Your Present:' tyquote()); msg.channel.send('Your Future:' tyquote()); } 	
+    msg.channel.send(('Your Past:') tyquote()); msg.channel.send(tyquote()); msg.channel.send(tyquote()); } 	
  
 //Quotes        
   if (msg.content === '!tyquote') {
