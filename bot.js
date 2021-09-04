@@ -21,6 +21,10 @@ client.on('message', msg => {
 //Haiku Function 
  if (msg.content === '!haiku') {
     msg.channel.send(haikupicture()); msg.channel.send(haikuwords()); }       
+	
+//tarot Function 
+ if (msg.content === '!tarot') {
+    msg.channel.send(tyquote()); msg.channel.send(tyquote()); msg.channel.send(tyquote()); } 	
  
 //Quotes        
   if (msg.content === '!tyquote') {
