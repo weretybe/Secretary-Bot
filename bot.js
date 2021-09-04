@@ -14,17 +14,13 @@ client.on('message', msg => {
   if (msg.content === '!version') {
     msg.channel.send('I am Secretary Bot 2.15. I have 11 new Haiku and 5 new Images. You all have been busy little bees! We need to talk about how many quotes there are - seriously there are so many quotes and I have to remember them all please help.'); }
   if (msg.content === '!commands') {
-    msg.channel.send('Right now I know airhorn, bot, version, haiku, and quotelist.');  }     
+    msg.channel.send('Right now I know airhorn, bot, haiku, and quotelist.');  }     
   if (msg.content === '!quotelist') {
     msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each. Note: all commands for the bot have to be in lower case: **ty** (7 - cougar, pants, rarity, furries, otter, spider, king), **chris** (3 - whales, bones, hawks), **npc** (6), **scott** (5 - tiddy, macgyver, dragon, pee, cuck), **kristyn** (8 - ass, basic, puppet, king, hedgehog, santa, cougar, wolf), **eth** (2 - spider, housecats), **austin** (8 - slaves, tacos, boobs, possum, crab, magic, funeral, coke), **thunder** (2 - blind, paintball), **devan** (8 - ahegao, goat, pony, saw, genocide, neko, coffee, nuts), **jake** (5 - avatar, roll, cheese, believe, baby), **sully** (3 - gorilla,graveyards, wolves), **megan** (1), **beth** (1), **troy** (1), **laurel** (1). '); } 
 
 //Haiku Function 
  if (msg.content === '!haiku') {
     msg.channel.send(haikupicture()); msg.channel.send(haikuwords()); }       
- 
- //Tarot Function 
- if (msg.content === '!tarot') {
-    msg.channel.send('test' haikupicture()); msg.channel.send(haikuwords()); msg.channel.send(haikupicture()) }   
  
 //Quotes        
   if (msg.content === '!tyquote') {
