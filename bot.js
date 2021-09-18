@@ -12,9 +12,9 @@ client.on('message', msg => {
   if (msg.content === '!bot') {
     msg.channel.send('I am listening and taking notes'); }
   if (msg.content === '!version') {
-    msg.channel.send('I am Secretary Bot 2.17. If the function is working, I should be able to predict the future now.'); }
+    msg.channel.send('I am Secretary Bot 2.17. If the function is working, I should be able to predict the future now. Also, you can ask me for !quote and I will pust a random quote from anyone. Neat!'); }
   if (msg.content === '!commands') {
-    msg.channel.send('Right now I know airhorn, bot, haiku, and quotelist.');  }     
+    msg.channel.send('Right now I know airhorn, bot, haiku, tarot1, and quotelist.');  }     
   if (msg.content === '!quotelist') {
     msg.channel.send('Currently, here are the prefixes for the ![prefix]quote command and the number of quotes for each. Note: all commands for the bot have to be in lower case: **ty** (7 - cougar, pants, rarity, furries, otter, spider, king), **chris** (3 - whales, bones, hawks), **npc** (6), **scott** (5 - tiddy, macgyver, dragon, pee, cuck), **kristyn** (8 - ass, basic, puppet, king, hedgehog, santa, cougar, wolf), **eth** (2 - spider, housecats), **austin** (8 - slaves, tacos, boobs, possum, crab, magic, funeral, coke), **thunder** (2 - blind, paintball), **devan** (8 - ahegao, goat, pony, saw, genocide, neko, coffee, nuts), **jake** (5 - avatar, roll, cheese, believe, baby), **sully** (3 - gorilla,graveyards, wolves), **megan** (1), **beth** (1), **troy** (1), **laurel** (1). '); } 
 
@@ -25,7 +25,9 @@ client.on('message', msg => {
 //Tarot Functions
  if (msg.content === '!tarot1') {
     msg.channel.send('*The seer shuffles the deck. A smile. A wink. A deft hand motion, almost hidden.*'); msg.channel.send('Behold, the cards speak:'); msg.channel.send(haikupicture()); }
- 
+ if (msg.content === '!tarot3') {
+    msg.channel.send('*The seer closes their eyes. Dust settles. Galaxies spin. The world is laid bare.*'); msg.channel.send('With these words and omens, I will reveal your future'); msg.channel.send(everything()); msg.channel.send(everything()); msg.channel.send(everything()); }
+
 	
 //Quotes        
 if (msg.content === '!quote') {
@@ -186,6 +188,10 @@ if (msg.content === '!quote') {
 
 
 //Quote Funtions
+function everything() {
+  var values = [anyquote(),haikupicture(),haikuwords()],
+      valueToUse = values[Math.floor(Math.random() * values.length)]
+  return(valueToUse) }
 function anyquote() {
   var values = ["'The rash will only last a week, but you'll remember this night forever' - Laurel, 2021","'If you cum even a single **bee** inside a girl, you are never going to fuck her again' - Beth DeLeon, 2018","'**Boobies**, and you can quote me on that' - Megan Vasquez, 2019","'Welp, I've seen Beastars and now I'm a furry' - Troy, 2020",tyquote(),chrisjquote(),npcquote(),jakequote(),sullyquote(),devanquote(),thunderquote(),scottquote(),kristynquote(),ethquote(),austinquote(),],
       valueToUse = values[Math.floor(Math.random() * values.length)]
