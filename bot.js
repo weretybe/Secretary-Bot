@@ -12,7 +12,7 @@ client.on('message', msg => {
   if (msg.content === '!bot') {
     msg.channel.send('I am listening and taking notes'); }
   if (msg.content === '!version') {
-    msg.channel.send('I am Secretary Bot 2.17. If the function is working, I should be able to predict the future now. '); }
+    msg.channel.send('I am Secretary Bot 2.17. If the function is working, I should be able to predict the future now.'); }
   if (msg.content === '!commands') {
     msg.channel.send('Right now I know airhorn, bot, haiku, and quotelist.');  }     
   if (msg.content === '!quotelist') {
@@ -23,8 +23,8 @@ client.on('message', msg => {
     msg.channel.send(haikupicture()); msg.channel.send(haikuwords()); }       
 
 //Tarot Function
- if (msg.content === '!tarot1') {
-    msg.channel.send('The seer shuffles the deck. A smile. A wink. A deft hand motion, almost hidden beneath the Seer's guile.'); msg.channel.send('Is this your card?'); msg.channel.send(haikupicture()); }
+ if (msg.content === '!tarot') {
+    msg.channel.send('The seer shuffles the deck. A smile. A wink. A deft hand motion, almost hidden.'); msg.channel.send('Is this your card?'); msg.channel.send(haikupicture()); }
 
 	
 //Quotes        
