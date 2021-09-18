@@ -25,11 +25,11 @@ client.on('message', msg => {
 //Tarot Functions
  if (msg.content === '!tarot1') {
     msg.channel.send('*The seer shuffles the deck. A smile. A wink. A deft hand motion, almost hidden.*'); msg.channel.send('Behold, the cards speak:'); msg.channel.send(haikupicture()); }
-
-if (msg.content === '!quote') {
-    msg.channel.send(anyquote()); }  
+ 
 	
 //Quotes        
+if (msg.content === '!quote') {
+    msg.channel.send(anyquote()); } 
   if (msg.content === '!tyquote') {
     msg.channel.send(tyquote()); }       
   if (msg.content === '!sullyquote') {
@@ -187,10 +187,9 @@ if (msg.content === '!quote') {
 
 //Quote Funtions
 function anyquote() {
-  var values = [tyquote(),chrisjquote(),npcquote()],
+  var values = ["'The rash will only last a week, but you'll remember this night forever' - Laurel, 2021","'If you cum even a single **bee** inside a girl, you are never going to fuck her again' - Beth DeLeon, 2018","'**Boobies**, and you can quote me on that' - Megan Vasquez, 2019","'Welp, I've seen Beastars and now I'm a furry' - Troy, 2020",tyquote(),chrisjquote(),npcquote(),jakequote(),sullyquote(),devanquote(),thunderquote(),scottquote(),kristynquote(),ethquote(),austinquote(),],
       valueToUse = values[Math.floor(Math.random() * values.length)]
   return(valueToUse) }
-
 function tyquote() {
   var values = ["'You can't naked dat butt with **pants** on.' - Ty Oden, 2017","'New! From the creators of paper>rock>scissors, it's **cougar**>20 something>student debt.' - Ty Oden, 2020","'If we talking about best fashonista and you are talking some other filly's name besides Rarity you need to spit that trash out of your dick catcher you ignorant fuckass.' - Ty Oden, 2017","'**Furries** are the blackface of dogs' - Ty Oden, 2018","'This **otter** is stupid thicc and the Monteray Bay Aquarium should not have to apoligize for fat shaming their own otter.' - Ty Oden, 2019","'That's how you get eaten by a big **spider** disguised as a sexy person' - Ty Oden, 2020","'Don't let any 5-year age gap or bounce house dominatrix get you down. You're a **King**.' - Ty Oden, 2020"],
       valueToUse = values[Math.floor(Math.random() * values.length)]
