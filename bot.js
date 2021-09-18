@@ -24,9 +24,9 @@ client.on('message', msg => {
 
 //Tarot Functions
  if (msg.content === '!tarot1') {
-    msg.channel.send('*The seer shuffles the deck. A smile. A wink. A deft hand motion, almost hidden.*'); msg.channel.send('Behold, the cards speak:'); msg.channel.send(haikupicture()); }
+    msg.channel.send('*The seer shuffles the deck. A smile. A wink. A deft hand motion, almost hidden.*'); msg.channel.send('**Behold, the cards speak**:'); msg.channel.send(haikupicture()); }
  if (msg.content === '!tarot3') {
-    msg.channel.send('*The seer closes their eyes. Dust settles. Galaxies spin. The world is laid bare.*'); msg.channel.send('With these words and omens, I will reveal your future'); msg.channel.send(everything()); msg.channel.send(everything()); msg.channel.send(everything()); }
+    msg.channel.send('*The seer closes their eyes. Dust settles. Galaxies spin. The world is laid bare.*'); msg.channel.send('**With these words and omens, I will reveal your fate**'); msg.channel.send(everything()); msg.channel.send(everything()); msg.channel.send(everything()); }
 
 	
 //Quotes        
