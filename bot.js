@@ -12,7 +12,7 @@ client.on('message', msg => {
   if (msg.content === '!bot') {
     msg.channel.send('I am listening and taking notes'); }
   if (msg.content === '!version') {
-    msg.channel.send('I am Secretary Bot 2.19. I have fixed an error where quotes from Beth, Troy, Laurel, and Megan would appear more often than any other quote. I replaced all instrances of ~~Sully~~ in my code with Alex. I updated the Tarot3 text to be a bit seasonal. I have added 18 new quotes, 8 new Haiku,   '); }
+    msg.channel.send('I am Secretary Bot 2.19. I have fixed an error where quotes from Beth, Troy, Laurel, and Megan would appear more often than any other quote. I replaced all instrances of ~~Sully~~ in my code with Alex. I updated the Tarot3 text to be a bit seasonal. I have added 18 new quotes, 8 new Haiku, and a new image.'); }
   if (msg.content === '!commands') {
     msg.channel.send('Right now I know airhorn, bot, version, haiku, tarot1 for a single card draw, tarot3 to get omens of the future, and quotelist.');  }     
   if (msg.content === '!quotelist') {
