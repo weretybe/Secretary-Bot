@@ -27,7 +27,6 @@ client.on('message', msg => {
     msg.channel.send('*The seer shuffles the deck. A smile. A wink. A deft hand motion, almost hidden.*'); msg.channel.send('**Behold, the cards speak**:'); msg.channel.send(haikupicture()); }
  if (msg.content === '!tarot3') {
     msg.channel.send('*The seer closes their eyes. Falling leaves settle. Cold winds blow. The world is laid bare.*'); msg.channel.send('**With these words and omens, I will reveal your fate**'); msg.channel.send(everything()); msg.channel.send(everything()); msg.channel.send(everything()); }
-
 	
 //Quotes        
 if (msg.content === '!quote') {
@@ -89,11 +88,11 @@ function npcquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function scottquote() {
-    var values = ["'UWU, are you resisting arrest?' - ScUwUt Hown, 2021","'I can’t take a compliment. My brain just shorts out and I start sucking dick.' - Scott, 2021","'This woman is a tiddy billionaire' -Scott Horn, 2021","'Now pee in this cup, Seabiscuit' -Scott Horn, 2021","'I'm going to MacGyver my dick into my own ass!' -Scott Horn, 2017","'[That] is literally my only utility in a world where Devan is a dragon' - Scott Horn on Dragon Fucking, 2018","'Is it possible to cuck yourself?' - Scoott Horn, 2018"]
+    var values = ["'UWU, are you resisting arrest?' - ScUwUt Hown, 2021","'I can’t take a compliment. My brain just shorts out and I start sucking dick.' - Scott, 2021","'This woman is a tiddy billionaire' -Scott Horn, 2021","'Now pee in this cup, Seabiscuit' -Scott Horn, 2021","'[That] is literally my only utility in a world where Devan is a dragon' - Scott Horn on Dragon Fucking, 2018"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function kristynquote() {
-  var values = ["'I got puppyflustered' - K 2020","'No one finds wolf porn in a vacum, Ty' - Kristyn Oden, 2021","'Look at this basic, she's not even a monsterfucker' - Kristyn Oden, 2020","'Dev just likes it when I use my ass for evil.' - Kristyn Oden, 2020","'It's basically like ass-to-mouthing a puppet, but yelling while you do it so that your words come out of its mouth' - Kristyn Oden 2017","''Financially assault me, King-Daddy' - Ty Oden' - Kristyn Oden, 2019","'I mean, fuck. If I could hoodwink a Santa into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Oden, noted Santa Fetishist, 2018","'Why can't an anthropomorphic hedgehog pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Oden, 2017","'I could totally top a cougar.' - Kristyn Oden, 2020"],
+  var values = ["'I got puppyflustered' - K 2020","'No one finds wolf porn in a vacum, Ty' - Kristyn Oden, 2021","'Look at this basic, she's not even a monsterfucker' - Kristyn Oden, 2020","'Dev just likes it when I use my ass for evil.' - Kristyn Oden, 2020","'It's basically like ass-to-mouthing a puppet, but yelling while you do it so that your words come out of its mouth' - Kristyn Oden 2017","'I mean, fuck. If I could hoodwink a Santa into sugar-daddying me a DIAMOND MINE, I'd be jingling those bells all the way to the BANK!' - Kristyn Oden, noted Santa Fetishist, 2018","'Why can't an anthropomorphic hedgehog pull a Marilyn Manson in the privacy of in front of his own personal webcam?' - Kristyn Oden, 2017","'I could totally top a cougar.' - Kristyn Oden, 2020"],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function ethquote() {
