@@ -88,7 +88,7 @@ function npcquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function scottquote() {
-    var values = ["'UWU, are you resisting arrest?' - ScUwUt Hown, 2021","'I can’t take a compliment. My brain just shorts out and I start sucking dick.' - Scott, 2021","'This woman is a tiddy billionaire' -Scott Horn, 2021","'Now pee in this cup, Seabiscuit' -Scott Horn, 2021","'[That] is literally my only utility in a world where Devan is a dragon' - Scott Horn on Dragon Fucking, 2018"]
+    var values = ["'UWU, are you resisting arrest?' - ScUwUt Hown, 2021","'I can’t take a compliment. My brain just shorts out and I start sucking dick.' - Scott, 2021","'This woman is a tiddy billionaire' -Scott Horn, 2021","'Now pee in this cup, Seabiscuit' -Scott Horn, 2021","'[That] is literally my only utility in a world where Devan is a dragon' - Scott Horn on Dragon Fucking, 2018"],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function kristynquote() {
@@ -96,11 +96,11 @@ function kristynquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function ethquote() {
-    var values = ["'I was supposed to get spider powers. This sucks!' - John Etheridge, 2017","'The 40 hour work week was invented by housecats trying to get their humans out of the house for most of the day.' - John Etheridge, 2020"]
+    var values = ["'I was supposed to get spider powers. This sucks!' - John Etheridge, 2017","'The 40 hour work week was invented by housecats trying to get their humans out of the house for most of the day.' - John Etheridge, 2020"],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function austinquote() {
-    var values = ["'I don't wanna think about tit bones' - Austin, 2021","'They're like the nunchucks of boobs' - Austin, 2021","'If a crab manages to sneak up on me, I deserve to die' - Austin, 2021","'Tacos are the devil's work'-Austin McDaniel, Sandwich Purist, 2020", 2020","'Possum blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta magic to you' - Austin McDaniel, 2018","'I also want a compilation of every pinned quote I've ever earned read out by whomever is presiding over my funeral.' - Austin McDaniel, 2019","'I don't think volcanoes... cum' - Austin McDaniel, 2019","'Only thing worse than a coke dealer, is a coke dealer who refuses to go green' - Austin McDaniel, 2020"]
+    var values = ["'I don't wanna think about tit bones' - Austin, 2021","'They're like the nunchucks of boobs' - Austin, 2021","'If a crab manages to sneak up on me, I deserve to die' - Austin, 2021","'Tacos are the devil's work'-Austin McDaniel, Sandwich Purist, 2020","'Possum blood is high in alcohol content. Trust me; I'm a scientist' - Austin McDaniel, 2017","'I will mansplain the shit outta magic to you' - Austin McDaniel, 2018","'I also want a compilation of every pinned quote I've ever earned read out by whomever is presiding over my funeral.' - Austin McDaniel, 2019","'I don't think volcanoes... cum' - Austin McDaniel, 2019","'Only thing worse than a coke dealer, is a coke dealer who refuses to go green' - Austin McDaniel, 2020"],
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }  
 function thunderquote() {
