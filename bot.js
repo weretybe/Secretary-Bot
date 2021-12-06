@@ -128,7 +128,7 @@ function troyquote() {
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function laurelquote() {
-    var values = ["'The rash will only last a week, but you'll remember this night forever' - Laurel, 2021","'I ate too much and banged too quickly. Now I feel sick' - Lauren, 2021"]
+    var values = ["'The rash will only last a week, but you'll remember this night forever' - Laurel, 2021","'I ate too much and banged too quickly. Now I feel sick' - Laurel, 2021"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
 function meganquote() {
