@@ -12,7 +12,7 @@ client.on('message', msg => {
   if (msg.content === '!bot') {
     msg.channel.send('I am listening and taking notes'); }
   if (msg.content === '!version') {
-    msg.channel.send('I am Secretary Bot 2.21. I have added 10 new Haiku. **In December, we are going to reduce the # of quotes and Haiku I have to keep up with.**'); }
+    msg.channel.send('I am Secretary Bot 2.22. I have removed ~20 quotes, due to the carnage of the Eliminator.**'); }
   if (msg.content === '!commands') {
     msg.channel.send('Right now I know airhorn, bot, version, haiku, tarot1 for a single card draw, tarot3 to get omens of the future, and quotelist.');  }     
   if (msg.content === '!quotelist') {
