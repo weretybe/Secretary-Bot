@@ -62,7 +62,9 @@ if (msg.content === '!quote') {
   if (msg.content === '!laurelquote') {
     msg.channel.send(laurelquote()); } 
   if (msg.content === '!brianquote') {
-    msg.channel.send(brianquote()); } 	
+    msg.channel.send(brianquote()); } 
+  if (msg.content === '!alyssaquote') {
+    msg.channel.send(alyssaquote()); }       
 });
 
 
@@ -72,7 +74,7 @@ function everything() {
       valueToUse = values[Math.floor(Math.random() * values.length)]
   return(valueToUse) }
 function anyquote() {
-  var values = [tyquote(),chrisjquote(),npcquote(),jakequote(),alexquote(),devanquote(),scottquote(),kristynquote(),ethquote(),austinquote(),tyquote(),chrisjquote(),npcquote(),jakequote(),alexquote(),devanquote(),scottquote(),kristynquote(),ethquote(),austinquote(),laurelquote(),bethquote(),troyquote(),meganquote(),brianquote()],
+  var values = [tyquote(),chrisjquote(),npcquote(),jakequote(),alexquote(),devanquote(),scottquote(),kristynquote(),ethquote(),austinquote(),tyquote(),chrisjquote(),npcquote(),jakequote(),alexquote(),devanquote(),scottquote(),kristynquote(),ethquote(),austinquote(),laurelquote(),bethquote(),troyquote(),meganquote(),brianquote(),alyssaquote()],
       valueToUse = values[Math.floor(Math.random() * values.length)]
   return(valueToUse) }
 function tyquote() {
@@ -139,8 +141,10 @@ function brianquote() {
     var values = ["'This is how H.P Lovecraft stories start, with people drinking from shoes' - Brian Neff, 2021","'MORE COCK' - Brian Neff, 2021"]
         valueToUse = values[Math.floor(Math.random() * values.length)]
     return(valueToUse) }
-
-"'oooooof you never wanna use an ostrich egg unless you're trying to get everyone pregnant' - Alyssa, 2021","'I said I'd give up my right to vote if I didn't have to work, excuse you!!! Fuck feminism, I hate working!!!' - Alyssa, 2021"
+function alyssaquote() {
+    var values = ["'oooooof you never wanna use an ostrich egg unless you're trying to get everyone pregnant' - Alyssa, 2021","'I said I'd give up my right to vote if I didn't have to work, excuse you!!! Fuck feminism, I hate working!!!' - Alyssa, 2021"]
+        valueToUse = values[Math.floor(Math.random() * values.length)]
+    return(valueToUse) }
 
 //Haiku Function
 function haikuwords() {
