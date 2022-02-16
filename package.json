@@ -2,13 +2,13 @@
 
   "name": "Secretary-Bot",
   "description": "A simple server-side bot",
-  "version": "2.0.0",
+  "version": "2.34.0",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
   },
   "dependencies": {
-    "discord.js": "11.1.0",
+    "discord.js": "13.6.0",
     "request": "2.81.0"
   }
 }
